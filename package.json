@@ -2,11 +2,27 @@
   "name": "eco-tunga",
   "version": "1.0.0",
   "description": "EcoTunga Project",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "dev": "concurrently \"cd ecotunga_frontend && npm run dev\" \"cd EcoTunga_backend && npm run dev\"",
-    "install-all": "npm install && cd ecotunga_frontend && npm install && cd ../EcoTunga_backend && npm install"
+    "install-all": "npm install && cd ecotunga_frontend && npm install && cd ../EcoTunga_backend && npm install",
+    "setup-db": "node src/config/setupDb.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "concurrently": "^8.2.2"
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.2.0",
+    "nodemailer": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
-} 
+}
