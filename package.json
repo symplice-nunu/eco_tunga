@@ -1,0 +1,12 @@
+{
+  "name": "eco-tunga",
+  "version": "1.0.0",
+  "description": "EcoTunga Project",
+  "scripts": {
+    "dev": "concurrently \"cd ecotunga_frontend && npm run dev\" \"cd EcoTunga_backend && npm run dev\"",
+    "install-all": "npm install && cd ecotunga_frontend && npm install && cd ../EcoTunga_backend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
